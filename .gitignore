@@ -1,0 +1,45 @@
+# Next.js (App Router) + pnpm + Tailwind CSS + TypeScript + Supabase
+# .gitignore
+
+# Dependencies
+/node_modules/
+/.pnpm-store/
+
+# Lockfiles (keep pnpm-lock.yaml)
+package-lock.json
+yarn.lock
+npm-shrinkwrap.json
+
+# Next.js build artifacts
+/.next/
+/out/
+/.vercel/
+
+# Environment variables (local Supabase keys, etc.)
+.env*.local
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+
+# Editors/IDEs
+.vscode/settings.json
+.idea/
+
+# Test coverage
+coverage/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Temporary files
+*~
+*.swp
+*.swo

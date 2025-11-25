@@ -1,30 +1,55 @@
-# Portfolio wireframe
+# 👨‍💼 Shrijal Paudel
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org)
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/lynxx-sts-projects/v0-portfolio-wireframe)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/ijqCaLmQqe5)
+## 🚀 About Me
+Hello! I'm Shrijal Paudel, a Business Operations & Development Professional passionate about building scalable web applications and optimizing business processes. This portfolio showcases my skills and projects built with modern technologies like Next.js, Tailwind CSS, and Supabase.
 
-## Overview
+## 🛠️ Tech Stack & Skills
+### Frontend
+- Next.js, React, TypeScript
+- Tailwind CSS, shadcn/ui
+- Framer Motion for animations
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+### Backend & Database
+- Supabase (Auth, Database, Storage)
+- PostgreSQL
 
-## Deployment
+### Tools & Others
+- Git, Netlify for deployment
+- Lucide React icons
 
-Your project is live at:
+## 📁 Featured Projects
+Check out my projects demonstrating full-stack development:
 
-**[https://vercel.com/lynxx-sts-projects/v0-portfolio-wireframe](https://vercel.com/lynxx-sts-projects/v0-portfolio-wireframe)**
+- **[Projects Page](/projects)** - Explore detailed project showcases with live demos and GitHub links.
 
-## Build your app
+## 💼 Professional Experience
+My journey in operations and development:
 
-Continue building your app on:
+- **[Experience Page](/experience)** - Timeline of roles, achievements, and skills applied.
 
-**[https://v0.app/chat/ijqCaLmQqe5](https://v0.app/chat/ijqCaLmQqe5)**
+## 🎓 Education
+- Business/Development related education background.
 
-## How It Works
+## 💬 Testimonials
+Feedback from clients and colleagues:
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+- **[Testimonials Page](/testimonials)** - Quotes and endorsements.
+
+## 📞 Get In Touch
+Ready to collaborate? Reach out!
+
+- **[Contact Page](/contact)** - Send a message directly.
+- 📧 Email: [shrijal@example.com](mailto:shrijal@example.com)
+- 💼 LinkedIn: [Shrijal Paudel](https://linkedin.com/in/shrijalpaudel)
+- 🐙 GitHub: [shrijalpaudel](https://github.com/shrijalpaudel)
+
+---
+
+⭐ **Star this repository** if you found it helpful!  
+Built with ❤️ using Next.js, Tailwind, and Supabase.
