@@ -6,7 +6,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
- 
+  // Enable static optimization where possible
+  experimental: {
+    optimizeCss: true,
+  },
 }
 
 export default nextConfig

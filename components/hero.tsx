@@ -50,8 +50,9 @@ export function Hero() {
             transition={{ delay: 0.5 }}
             className="text-lg text-muted-foreground max-w-xl mb-10 leading-relaxed border-l-2 border-border pl-6"
           >
-            Skilled team player with a passion for innovation. I bridge the gap between business strategy and
-            operational excellence, helping startups and organizations thrive in competitive markets.
+            Experienced Business Operations Manager based in Kathmandu, Nepal, specializing in business strategy, 
+            operations management, and entrepreneurship. I bridge the gap between business strategy and 
+            operational excellence, helping startups and organizations thrive in competitive Nepalese and international markets.
           </motion.p>
 
           <motion.div
