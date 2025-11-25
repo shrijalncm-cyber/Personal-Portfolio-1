@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { PageTransition } from "@/components/page-transition"
 import { motion, useScroll, useSpring } from "framer-motion"
 import { Briefcase, MapPin } from "lucide-react"
-import { useRef } from "react"
+import { useRef, useState, useEffect } from "react"
 
 const experiences = [
   {
@@ -87,6 +87,7 @@ const experiences = [
 
 function ExperienceTimeline() {
   const ref = useRef(null)
+  const [isPageLoaded, setIsPageLoaded] = useState(false)
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"],
@@ -96,6 +97,19 @@ function ExperienceTimeline() {
     damping: 30,
     restDelta: 0.001,
   })
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setIsPageLoaded(true)
+    }
+
+    if (document.readyState === 'complete') {
+      handleLoad()
+    } else {
+      window.addEventListener('load', handleLoad)
+      return () => window.removeEventListener('load', handleLoad)
+    }
+  }, [])
 
   return (
     <div ref={ref} className="relative container mx-auto px-4 md:px-6 max-w-4xl">
@@ -112,9 +126,16 @@ function ExperienceTimeline() {
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            animate={
+              index === 0 && isPageLoaded
+                ? { opacity: 1, y: 0 }
+                : index === 0
+                ? { opacity: 0, y: 50 }
+                : { opacity: 0, y: 50 }
+            }
+            whileInView={index > 0 ? { opacity: 1, y: 0 } : undefined}
+            viewport={index > 0 ? { once: true, margin: "-100px" } : undefined}
+            transition={index === 0 ? { duration: 0.5 } : { duration: 0.5, delay: 0 }}
             className={`relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
           >
             {/* Timeline Dot */}
@@ -123,7 +144,7 @@ function ExperienceTimeline() {
             {/* Content Card */}
             <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 0 ? "md:pl-12" : "md:pr-12 text-right"}`}>
               <div className={`flex flex-col gap-1 mb-4 ${index % 2 === 0 ? "items-start" : "md:items-end"}`}>
-                <span className="text-sm font-mono text-primary bg-primary/10 px-3 py-1 rounded-full w-fit">
+                <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full w-fit">
                   {exp.period}
                 </span>
                 <h3 className="text-2xl font-bold mt-2">{exp.role}</h3>

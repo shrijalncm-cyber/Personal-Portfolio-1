@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Users, Lightbulb, Plane, Award, HeartHandshake } from "lucide-react"
+import { useState, useEffect } from "react"
 
 const projects = [
   {
@@ -57,6 +58,21 @@ const projects = [
 ]
 
 export default function ProjectsPage() {
+  const [isPageLoaded, setIsPageLoaded] = useState(false)
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setIsPageLoaded(true)
+    }
+
+    if (document.readyState === 'complete') {
+      handleLoad()
+    } else {
+      window.addEventListener('load', handleLoad)
+      return () => window.removeEventListener('load', handleLoad)
+    }
+  }, [])
+
   return (
     <main className="bg-background min-h-screen text-foreground selection:bg-primary/20">
       <Navbar />
@@ -86,9 +102,16 @@ export default function ProjectsPage() {
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
+                  animate={
+                    index === 0 && isPageLoaded
+                      ? { opacity: 1, y: 0 }
+                      : index === 0
+                      ? { opacity: 0, y: 20 }
+                      : { opacity: 0, y: 20 }
+                  }
+                  whileInView={index > 0 ? { opacity: 1, y: 0 } : undefined}
+                  viewport={index > 0 ? { once: true } : undefined}
+                  transition={index === 0 ? { duration: 0.5 } : { duration: 0.5, delay: (index - 1) * 0.1 }}
                   whileHover={{ y: -5 }}
                 >
                   <Card className="h-full hover:border-primary/50 transition-colors cursor-default group">
