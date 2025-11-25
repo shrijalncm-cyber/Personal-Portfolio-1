@@ -12,7 +12,7 @@ export default function Home() {
       <PageTransition>
         <Hero />
         <TechStack />
-        <Testimonials />
+        {/* <Testimonials /> */}
       </PageTransition>
       <Footer />
     </main>

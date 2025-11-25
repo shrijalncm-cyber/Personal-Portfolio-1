@@ -27,15 +27,16 @@ export function Footer() {
             </Button>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 place-items-center">
               <Button variant="ghost" size="icon" className="hover:scale-[1.05] hover:shadow-md transition-all duration-300 ease-in-out" asChild>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/shrijalpaudel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Linkedin className="w-5 h-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:scale-[1.05] hover:shadow-md transition-all duration-300 ease-in-out" asChild>
-                <a href="#" aria-label="Twitter">
+            {/*
+             <Button variant="ghost" size="icon" className="hover:scale-[1.05] hover:shadow-md transition-all duration-300 ease-in-out" asChild>
+                <a href="#" aria-label="X">
                   <Twitter className="w-5 h-5" />
                 </a>
-              </Button>
+              </Button>*/}
               <Button variant="ghost" size="icon" className="hover:scale-[1.05] hover:shadow-md transition-all duration-300 ease-in-out" asChild>
                 <a href="#" aria-label="GitHub">
                   <Github className="w-5 h-5" />

@@ -97,7 +97,8 @@ export function Hero() {
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Latest Role</p>
-              <p className="font-semibold text-lg">Program Intern @ PGS</p>
+              <p className="font-semibold text-md">Deputy Manager</p>
+              <p className="text-sm text-muted-foreground">Nepal Can Group</p>
             </div>
           </motion.div>
 

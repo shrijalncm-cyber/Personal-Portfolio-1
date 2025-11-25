@@ -11,7 +11,7 @@ import { useState, useEffect } from "react"
 
 const projects = [
   {
-    title: "BGyan (USAID Project)",
+    title: "BGyan (Clock b Business Innovations)",
     category: "Business Development",
     role: "Project Associate",
     icon: <Users className="w-5 h-5" />,
@@ -20,7 +20,7 @@ const projects = [
     tags: ["USAID", "SME Consulting", "Operations"],
   },
   {
-    title: "Pitch Date With Angels",
+    title: "Pitch Date With Angels (Investment Circle)",
     category: "Event Management",
     role: "Host & Coordinator",
     icon: <Lightbulb className="w-5 h-5" />,

@@ -22,7 +22,7 @@ const experiences = [
   },
   {
     role: "Executive Assistant",
-    company: "Nepal Can Buy",
+    company: "Nepal Can Group",
     period: "Aug 2025 - Nov 2025",
     location: "Kathmandu District, Nepal",
     type: "Marketplace Operations",
@@ -35,11 +35,11 @@ const experiences = [
     ],
   },
   {
-    role: "Business Advisor",
+    role: "Chief of Operations",
     company: "Flagforge",
     period: "May 2025 - Present",
     location: "Remote / Self-employed",
-    type: "Business Consulting",
+    type: "Operations & Business Strategy",
     description: [
       "Advising on business strategy and operations.",
       "Identifying potential growth opportunities through market research.",

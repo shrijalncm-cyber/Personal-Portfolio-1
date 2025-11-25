@@ -50,14 +50,14 @@ export default function ContactPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-lg text-muted-foreground max-w-2xl mx-auto"
+              className="text-lg text-muted-foreground mx-auto"
             >
               Have a project in mind or want to discuss business opportunities? I&apos;d love to hear from you.
             </motion.p>
           </div>
 
-          <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-            <div className="grid lg:grid-cols-2 gap-12">
+          <div className="container mx-auto md:px-6 max-w-5xl">
+            <div className="grid lg:">
               {/* Contact Info */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -125,7 +125,7 @@ export default function ContactPage() {
               </motion.div>
 
               {/* Contact Form */}
-              <motion.div
+             {/*} <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3 }}
@@ -170,7 +170,7 @@ export default function ContactPage() {
 
                   <SubmitButton />
                 </form>
-              </motion.div>
+              </motion.div>*/}
             </div>
           </div>
         </div>
